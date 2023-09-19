@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");  
+    div.animate({left: '300px'}, "slow");
+    //div.animate({Right:'100px'},"fast")
+    div.animate({fontSize: '3em'}, "slow");
+  });
+});
+</script> 
+</head>
+<body>
+
+<button style="color: aquamarine;"> Animation</button>
+
+<p>By default, all HTML elementcannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:rgb(191, 33, 146);height:200px;width:200px;position:relative;">HELLO</div>
+
+</body>
+</html>
