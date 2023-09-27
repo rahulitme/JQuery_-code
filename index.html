@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 20px; 
+            margin: 0; /* Added to remove default body margin */
+        }
+        #header {
+            width: 100%;
+            height: 10px;
+            background: rgb(125, 23, 227);
+            padding: 20px;
+            margin: 12px;
+            text-align: center;
+        }
+        #header.sticky { /* Corrected the class name to "sticky" */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: violet;
+            box-shadow: 0px 12px 4px rgb(34, 180, 34); /* Corrected the commas to spaces */
+        }
+    </style>
+</head>
+<body>Chapter II - IN WHICH POOH GOES VISITING AND GETS INTO A TIGHT PLACE
+
+    Chapter III - IN WHICH POOH AND PIGLET GO HUNTING AND NEARLY CATCH A WOOZLE
+    
+    Chapter IV - IN WHICH EEYORE LOSES A TAIL AND POOH FINDS ONE
+    
+    Chapter V - IN WHICH PIGLET MEETS A HEFFALUMP
+    
+    Chapter VI - IN WHICH EEYORE HAS A BIRTHDAY AND GETS TWO PRESENTS
+    
+    Chapter VII - IN WHICH KANGA AND BABY ROO COME TO THE FOREST, AND PIGLET HAS A BATH
+    
+    Chapter VIII - IN WHICH CHRISTOPHER ROBIN LEADS AN EXPOTITION TO THE NORTH POLE
+    
+    Chapter IX - IN WHICH PIGLET IS ENTIRELY SURROUNDED BY WATER
+    
+    Chapter X - IN WHICH CHRISTOPHER ROBIN GIVES POOH A PARTY, AND WE SAY GOOD-BYE
+    
+    Return to the A.A. Milne library.
+    <!-- Your content here -->
+
+    <div id="header">
+        <p>welcome</p>
+    </div>
+    Chapter II - IN WHICH POOH GOES VISITING AND GETS INTO A TIGHT PLACE
+
+Chapter III - IN WHICH POOH AND PIGLET GO HUNTING AND NEARLY CATCH A WOOZLE
+
+Chapter IV - IN WHICH EEYORE LOSES A TAIL AND POOH FINDS ONE
+
+Chapter V - IN WHICH PIGLET MEETS A HEFFALUMP
+
+Chapter VI - IN WHICH EEYORE HAS A BIRTHDAY AND GETS TWO PRESENTS
+
+Chapter VII - IN WHICH KANGA AND BABY ROO COME TO THE FOREST, AND PIGLET HAS A BATH
+
+Chapter VIII - IN WHICH CHRISTOPHER ROBIN LEADS AN EXPOTITION TO THE NORTH POLE
+
+Chapter IX - IN WHICH PIGLET IS ENTIRELY SURROUNDED BY WATER
+
+Chapter X - IN WHICH CHRISTOPHER ROBIN GIVES POOH A PARTY, AND WE SAY GOOD-BYE
+
+Return to the A.A. Milne library.
+
+    <!-- Your content here -->Chapter II - IN WHICH POOH GOES VISITING AND GETS INTO A TIGHT PLACE
+
+Chapter III - IN WHICH POOH AND PIGLET GO HUNTING AND NEARLY CATCH A WOOZLE
+
+Chapter IV - IN WHICH EEYORE LOSES A TAIL AND POOH FINDS ONE
+
+Chapter V - IN WHICH PIGLET MEETS A HEFFALUMP
+
+Chapter VI - IN WHICH EEYORE HAS A BIRTHDAY AND GETS TWO PRESENTS
+
+Chapter VII - IN WHICH KANGA AND BABY ROO COME TO THE FOREST, AND PIGLET HAS A BATH
+
+Chapter VIII - IN WHICH CHRISTOPHER ROBIN LEADS AN EXPOTITION TO THE NORTH POLE
+
+Chapter IX - IN WHICH PIGLET IS ENTIRELY SURROUNDED BY WATER
+
+Chapter X - IN WHICH CHRISTOPHER ROBIN GIVES POOH A PARTY, AND WE SAY GOOD-BYE
+
+Return to the A.A. Milne library.
+
+    <script>
+        const header = document.querySelector("#header"); // Corrected the selector
+        const sticky = header.offsetTop;
+        console.log("header");
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > sticky) {
+                header.classList.add('sticky'); // Changed 'remove' to 'add'
+            } else {
+                header.classList.remove('sticky'); // Added this line to remove the class when not scrolled
+            }
+        });
+    </script>
+</body>
+</html>
+
+
